@@ -135,7 +135,18 @@ class Result extends Student {
     }
 }
 
+//static keyword
+class Man {
+    String name;
+    static int age;
 
+    public void printInfo() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + age);
+    }
+
+
+}
 
 
 
@@ -200,6 +211,15 @@ public class Oops {
         Result result1 = new Result();
         result1.setMarks(100);
         System.out.println("Marks: " + result1.getMarks());
+
+        System.out.println("==============static keyword=============");
+        Man.age = 25;
+        Man man1 = new Man();
+        man1.name = "John";
+        man1.printInfo();
+
+        
+
         
 
 
